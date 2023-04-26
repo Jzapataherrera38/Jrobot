@@ -106,19 +106,19 @@ Esto le indicará al robot que se mueva 40 píxeles a la derecha cada vez que ej
 
 //////////// LEVEL 2 /////////////////////////////////////////////////////////
 `
-<h1>Level 2: Introduction Continued (& Variables)</h1>
+<h1>Nivel 2: Introducción Continuación (y Variables)</h1>
 
-<h2>HUD and Properties Tab</h2>
-In the top right corner of the screen you'll see some helpful info in a <b>Heads Up Display:</b><br>
-The robot's health and energy, how many coins the robot's collected and the position of the mouse.<br>
-These will make it more convenient to play the game.<br><br>
-There's also the <b>Properties Tab</b>, it shows more detailed information about the robot.<br>
-You won't really need these just yet but it's useful to know they exist for later!
+<h2>Pestaña HUD y Propiedades</h2>
+En la esquina superior derecha de la pantalla, verá información útil en una <b>pantalla de advertencia:</b><br>
+La salud y la energía del robot, cuántas monedas ha recogido el robot y la posición del ratón.<br>
+Esto hará que sea más conveniente jugar el juego.<br><br>
+También está la <b>pestaña de propiedades</b>, que muestra información más detallada sobre el robot.<br>
+Realmente no los necesitarás todavía, ¡pero es útil saber que existen para más adelante!
 
 <h2>Practice Mode</h2>
-<h3>Keyboard Controls</h3>
-In the top left, you'll see a button that looks like the arrow keys on a keyboard, this turns on the robot's <b>Keyboard Controls</b><br>
-Go ahead and click it, now you can control the robot from the keyboard, the default controls are:
+<h3>Controles del teclado</h3>
+En la parte superior izquierda, verá un botón que se parece a las teclas de flecha de un teclado, esto activa los <b>Controles del teclado</b><br> del robot.
+Continúe y haga clic en él, ahora puede controlar el robot desde el teclado, los controles predeterminados son:
 	<table>
 	<tr><td>
 	Move Left
@@ -149,46 +149,45 @@ Go ahead and click it, now you can control the robot from the keyboard, the defa
 	</td><td>
 	G
 </td></tr></table>
-You will have noticed after turning on <b>Keyboard Controls</b> that a "Practice Mode" message appeared.<br>
-<b>Practice Mode</b> is when you're practicing a level before writing the code for it.<br>
-The objective of the game is to solve the levels entirely using only code written in the <b>Script Tab</b>.<br><br>
+Habrás notado después de activar los <b>Controles del teclado</b> que apareció un mensaje de "Modo de práctica".<br>
+<b>Modo de práctica</b> es cuando estás practicando un nivel antes de escribir el código para él.<br>
+El objetivo del juego es resolver los niveles por completo usando solo el código escrito en la <b>pestaña Script</b>.<br><br>
 
-You will enter Practice Mode if you use Keyboard Controls, the Console Tab, or pause the currently running script.<br>
-So when you're done practicing and want to finish the level, run your script and avoid the Console and Keyboard Controls.
+Entrará en el modo de práctica si usa los controles del teclado, la pestaña de la consola o pausa el script que se está ejecutando actualmente.<br>
+Entonces, cuando haya terminado de practicar y quiera terminar el nivel, ejecute su script y evite los controles de consola y teclado.
 <br><br>
 
-<h3>Controlling The Robot From The Console</h3>
-The Console can send commands to the robot, try them out:
+<h3>Controlar el robot desde la consola</h3>
+La Consola puede enviar comandos al robot, pruébelos:
 	<table>
 	<tr><td>
 	<code>robot.move(<i>n</i>)</code>
 	</td><td>
-	Where <b><i>n</i></b> is a number from <b>-40</b> to <b>40</b>.
-	Robot moves forward or backward <b><i>n</i></b> pixels.
+	Donde <b><i>n</i></b> es un número de <b>-40</b> a <b>40</b>.
+El robot avanza o retrocede <b><i>n</i></b> píxeles.
 </td></tr><tr><td>
 	<code>robot.jump(<i>n</i>)</code>
 	</td><td>
-	Where <b><i>n</i></b> is a number from <b>-10</b> to <b>10</b>.
-	Robot jumps forward or backward at speed <b><i>n</i></b>. 
+	Donde <b><i>n</i></b> es un número de <b>-10</b> a <b>10</b>.
+El robot salta hacia adelante o hacia atrás a una velocidad <b><i>n</i></b>.
 </td></tr><tr><td>
 	<code>robot.jump()</code>
 	</td><td>
-	Robot jumps straight up. Equivalent to <b>robot.jump(0)</b>
+El robot salta hacia arriba. Equivalente a <b>robot.jump(0)</b>
 </td></tr><tr><td>
 	<code>robot.turn()</code>
 	</td><td>
-	Robot turns around, this does not affect the direction of the previous two commands, it only affects <b>robot.shoot()</b>
-</td></tr><tr><td>
+	El robot gira, esto no afecta la dirección de los dos comandos anteriores, solo afecta a <b>robot.shoot()</b></td></tr><tr><td>
 	<code>robot.shoot()</code>
 	</td><td>
-	Robot shoots gun!
+	¡Robot dispara arma!
 </td></tr></table>
 
 
-<h2>Keyboard Shortcuts</h2>
+<h2>Métodos abreviados de teclado</h2>
 	<table>
 	<tr><td>
-<b>Instructions Tab: </b>
+	<b>Pestaña de instrucciones: </b>
 	</td><td>
 	Ctrl + 1
 </td></tr><tr><td>
@@ -212,75 +211,82 @@ The Console can send commands to the robot, try them out:
 	</td><td>
 	Ctrl + Enter
 </td></tr></table>
-If you're on a Mac use Command instead of Ctrl
+Si está en una Mac, use Comando en lugar de Ctrl
 
-<h2>Data Types</h2>
-Data types are central to the operation of programming languages, the most basic built-in data types are called primitives.<br>
-A full list of primitives in JavaScript is:
+<h2>Tipos de datos</h2> 
+Los tipos de datos son fundamentales para el funcionamiento de los
+ lenguajes de programación, los tipos de datos integrados más básicos
+  se denominan primitivos.<be> Una lista completa de primitivos en JavaScript es:
 	<table>
 	<tr><td>
-<b>Number</b>
-	</td><td>
-	Any number (both integers and floating points, positive or negative).<br>
-	Examples: <code>12</code> <code>7.25</code> <code>0</code> <code>-10023</code>
+<b>Número</b>
+</td><td>
+Cualquier número (tanto enteros como puntos flotantes, positivos o negativos).<br>
+Ejemplos:<code>12</code> <code>7.25</code> <code>0</code> <code>-10023</code>
 </td></tr><tr><td>
-	<b>String</b>
-	</td><td>
-	Any collection of characters surrounded by single or double quotes.<br>
-	The choice of single or double quotes makes no difference as long as the opening and closing quotes match.
-	Examples: <code>'Look, fireworks!'</code> <code>"Sub-total: $25"</code>
+<b>Cadena</b>
+</td><td>
+Cualquier colección de caracteres entre comillas simples o dobles.<br>
+La elección de comillas simples o dobles no hace ninguna diferencia siempre que las comillas de apertura y cierre coincidan.
+Ejemplos: <code>'Look, fireworks!'</code> <code>"Sub-total: $25"</code>
 </td></tr><tr><td>
-	<b>Boolean</b>
-	</td><td>
-	A boolean can be either <code>true</code> or <code>false</code>, pretty simple.
+<b>Booleano</b>
+</td><td>
+Un booleano puede ser cualquiera <code>true</code> or <code>false</code>, bastante simple.
 </td></tr><tr><td>
-	<b>undefined</b>
+<b>indefinido</b>
+</td><td>
+	<code>undefined</code> es raro, cuando algo es <b>indefinido</b> eso significa que no tiene un valor.<br>
+	La mayoría de las veces que encuentra <b>indefinido</b> significa que algo salió mal.
+	</td></tr><tr><td>
+	<b>nulo</b>
 	</td><td>
-	<code>undefined</code> is a weird one, when something is <b>undefined</b> that means that it doesn't have a value.<br>
-	Most of the times you encounter <b>undefined</b> it means that something has gone wrong.
-</td></tr><tr><td>
-	<b>null</b>
-	</td><td>
-	At first glance, you might think: "Why would we need a <code>null</code> data type if we already have <b>undefined</b>?"<br>
-	Well the difference between the two is intention, <b>undefined</b> means this <i>thing</i> has no value for some reason.
-	<br>On the other hand, <b>null</b> means this <i>thing</i> has no value, I recognise this and it's the way I would like it to be.
-
+	A primera vista, podría pensar: "¿Por qué necesitaríamos un tipo de datos <code>null</code> si ya tenemos <b>indefinido</b>?"<br>
+	Bueno, la diferencia entre los dos es la intención, <b>indefinido</b> significa que esta <i>cosa</i> no tiene valor por alguna razón.
+	<br>Por otro lado, <b>null</b> significa que esta <i>cosa</i> no tiene valor, lo reconozco y es como me gustaría que fuera.
 </td></tr></table>
 
-You can use <code>typeof()</code> to get the type of a piece of data.<br>
-Try the following commands in the console:
+Puedes usar <code>typeof()</code> para obtener el tipo de un dato.<br>
+Pruebe los siguientes comandos en la consola:
 <table><tr><td>
 <code>typeof(51.72)</code>
-	</td><td>Should output
+	</td><td>Debería salir
 	<code class="console-out">&larr; "number"</code>
 </td></tr><tr><td>
 <code>typeof('I like jello')</code>
-	</td><td>Should output
+	</td><td>Debería salir
 	<code class="console-out">&larr; "string"</code>
 </td></tr><tr><td>
 <code>typeof(true)</code>
-	</td><td>Should output
+	</td><td>Debería salir
 	<code class="console-out">&larr; "boolean"</code>
 </td></tr><tr><td>
 <code>typeof(undefined)</code>
-	</td><td>Should output
+	</td><td>Debería salir
 	<code class="console-out">&larr; "undefined"</code>
 </td></tr><tr><td>
 <code>typeof(null)</code>
-	</td><td>Should output
-	<code class="console-out">&larr; "object"</code><br>
-	This is regarded by many as a mistake in the language.<br>
-	It's too late to fix it now so we'll have to deal with it.
+	</td><td>Debería salir
+	<code class="console-out">&larr; "object"</code>
+	<br>
+	Esto es considerado por muchos como un error en el lenguaje.<br>
+Es demasiado tarde para arreglarlo ahora, así que tendremos que lidiar con eso.
 </td></tr></table>
 
-<br><h3>A Crash Course in Objects:</h3>
+<br><h3>Un curso acelerado de objetos:</h3>
 
-Primitives can be combined to make more complex data types called <b>objects</b>.<br>
-You've seen objects before: <code>robot.action = {type: 'move', amount: 40}</code><br><br>
-Here we have an object that represents an action:<br>
-it consists of a string <b>property</b> called <code>type</code> and a number property called <code>amount</code>.
+Las primitivas se pueden combinar para crear tipos de datos más complejos llamados <b>objetos</b>.<br>
+Has visto objetos antes:
+ <code>robot.action = {type: 'move', amount: 40}</code>
+ <br><br>
+ Aquí tenemos un objeto que representa una acción:<br>
+ consiste en una cadena <b>propiedad</b> llamada
+<code>type</code> 
+y una propiedad numérica llamada
+ <code>amount</code>.
 	<br><br>
-	We will discuss Objects in more detail later, so don't worry if you're not comfortable with them just yet.
+	Discutiremos los Objetos con más detalle más adelante,
+así que no se preocupe si todavía no se siente cómodo con ellos.
 
 <br><br>
 <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Variables#Variable_types" target="_blank" class="learn-more">Learn More About Data Types</a>
@@ -288,22 +294,27 @@ it consists of a string <b>property</b> called <code>type</code> and a number pr
 
 <h2>Variables</h2>
 
-A variable is a name that refers to a value, take for example <code>favoriteFood = 'Lasagne';</code>.<br>
-Here we have a variable called <code>favoriteFood</code> with a string value of <code>'Lasagne'</code>.<br><br>
+Una variable es un nombre que se refiere a un valor, por ejemplo <code>favoriteFood = 'Lasagne';</code>.<br>
+Aquí tenemos una variable llamada<code>favoriteFood</code> con un valor de cadena de <code>'Lasagne'</code>.<br><br>
 
-A variable can have any data type as its value, number, string or boolean, even undefined and null!<br>
-<code>favoriteColor = null;</code> In this example we have a variable set to <b>null</b>, we are basically saying:<br>
-"Hey look, I have this <b>favoriteColor</b> variable, but I don't have a favorite color, I'll let you know later if I choose one."
+Una variable puede tener cualquier tipo de dato como valor, número, cadena o booleano, ¡incluso indefinido y nulo!<br>
+<code>favoriteColor = null;</code> En este ejemplo, tenemos una variable establecida en <b>null</b>, básicamente estamos diciendo:<br>
+"Oye, mira, tengo esta variable <b>favoriteColor</b>, pero no tengo un color favorito, te avisaré más tarde si elijo uno".
 <br><br>
-Now what about <code>undefined</code>, when would we set a variable to <b>undefined</b>? Well, never, at least not on purpose.<br>
-Ok, so far, we've been creating variables like this <code><i>variable</i> = <i>value</i></code>.<br>But that's not quite the proper way of doing it.<br><br>
+ahora que tal<code>undefined</code>, ¿Cuándo estableceríamos una variable en <b>indefinida</b>? 
+Bueno, nunca, al menos no a propósito.<br>
+Ok, hasta ahora, hemos estado creando variables como esta <code><i>variable</i> = <i>value</i></code>.
+<br>Pero esa no es la forma correcta de hacerlo..<br><br>
 
-In JavaScript, the proper way is <code>var <i>variable</i> = <i>value</i>;</code>. Where the cruical step is the <b>var</b> keyword.<br>
-<b>var</b> basically means: "Make me a variable called: ". So we can split the previous statement into two parts:<br>
+En JavaScript, la forma correcta es
+<code>var <i>variable</i> = <i>value</i>;</code>.
+ Where the cruical step is the <b>var</b> keyword.<br>
+<b>var</b> básicamente significa: "Hazme una variable llamada:".
+Entonces podemos dividir la declaración anterior en dos partes:<br>
 	<code>var <i>variable</i>;</code> and <code><i>variable</i> = <i>value</i>;</code>.<br><br>
 
-The technical name for creating a variable (the first statement) is <b>declaration</b>.<br>
-Whereas the process of assigning a value to a variable for the first time (the second statement) is called <b>definition</b>.<br>
+The technical name for creating a variable (the first declaración) is <b>declaration</b>.<br>
+Whereas the process of assigning a value to a variable for the first time (the second declaración) is called <b>definition</b>.<br>
 And now for the punch-line, before defining a variable, its value is... <code>undefined</code><br>
 
 <br><br>
@@ -323,44 +334,41 @@ The levels will get much more interesting once we've covered some more JavaScrip
 
 //////////// LEVEL 3 /////////////////////////////////////////////////////////
 `
-<h1>Level 3: Math and Control Flow</h1>
+<h1>Nivel 3: Flujo de Control y Matemáticas</h1>
 
-<h2>Math</h2>
-<h3>Arithmetic Operators</h3>
-JavaScript supports the basic arithmetic operations: <code>+  -  *  /  %  **</code>.<br>
-Addition, subtraction, multiplication, division, modulo (remainder after division), and exponential.<br><br>
-
-<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators" target="_blank" class="learn-more">Learn More About Arithmetic Operators</a>
+<h2>Matemáticas</h2>
+<h3>Operadores aritméticos</h3>
+JavaScript admite las operaciones aritméticas básicas: <code>+  -  *  /  %  **</code>.<br>
+Suma, resta, multiplicación, división, módulo (resto después de la división) y exponencial.<br><br>
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators" target="_blank" class="learn-more">Más información sobre los operadores aritméticos</a>
 <br><br>	
 
-<h3>Assignment Operators</h3>
-As it turns out, in programming the following operations are exceedingly popular: <code>i = i + 1;</code>, <code>m = m / 2;</code>.<br>
-So a shorthand notation was developed, the previous two expressions can be rewritten as: <code>i += 1;</code> and <code>m /= 2;</code><br>
-The two operations <code>i += 1;</code> and <code>i -= 1;</code> are probably the most often used in programming, so they were shortened even further to <code>i++;</code> and <code>i--;</code><br><br>
+<h3>Operadores de asignación</h3>
+Resulta que, en la programación, las siguientes operaciones son extremadamente populares: <code>i = i + 1;</code>, <code>m = m / 2;</code>.<br>
+Entonces se desarrolló una notación abreviada, las dos expresiones anteriores se pueden reescribir como: <code>i += 1;</code> and <code>m /= 2;</code><br>
+Las dos operaciones <code>i += 1;</code> y <code>i -= 1;</code> son probablemente las más utilizadas en programación, por lo que se acortaron aún más a <code>i++;< /code> y <code>i--;</code><br><br>
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Assignment_Operators" target="_blank" class="learn-more">Learn More About Assignment Operators</a>
 <br><br>	
 
-<h3>String Concatenation</h3>
-Adding strings isn't quite math, but it's very useful. You can add multiple strings together with the <code>+</code> operator:<br>
-<code>"Robots " + "are " + "cool" + '!'</code> and this gives the string <code>"Robots are cool!"</code><br><br>
-Numbers can be added to strings, the explicit way to do this is using the <b>String()</b> constructor.<br>
-<code>String(47)</code> turns the number 47 into the string "47". And then we can perform string concatenation with the result.<br>
-<code>"There are " + String(47) + " jellybeans in this packet."</code><br><br>
-But very often it's quite obvious what we're trying to do, so the following works just as well in JavaScript:<br>
-<code>"There are " + 47 + " jellybeans in this packet."</code> The rule is: adding a number and a string together first converts the number to a string.<br><br>
-So this makes sense, but in some cases it's not as helpful as we'd like. Take for example <code>"7" + 3</code> this gives the string <code>"73"</code> which might not be what you expected so take care.
-
+<h3>Concatenación de cadenas</h3>
+Agregar cadenas no es del todo matemático, pero es muy útil. Puede agregar varias cadenas junto con el operador <code>+</code>:<br>
+<code>"Los robots" + "son" + "geniales" + '!'</code> y esto da la cadena <code>"¡Los robots son geniales!"</code><br><br>
+Se pueden agregar números a las cadenas, la forma explícita de hacerlo es usando el constructor <b>String()</b>.<br>
+<code>String(47)</code> convierte el número 47 en la cadena "47". Y luego podemos realizar la concatenación de cadenas con el resultado.<br>
+<code>"Hay " + String(47) + " gominolas en este paquete."</code><br><br>
+Pero muy a menudo es bastante obvio lo que estamos tratando de hacer, por lo que lo siguiente funciona igual de bien en JavaScript:<br>
+<code>"Hay " + 47 + " gominolas en este paquete".</code> La regla es: sumar un número y una cadena primero convierte el número en una cadena.<br><br>
+Esto tiene sentido, pero en algunos casos no es tan útil como nos gustaría. Toma por ejemplo <code>"7" + 3</code> esto da la cadena <code>"73"</code> que podría no ser lo que esperabas, así que ten cuidado.
 	<br><br>
-<h3>Parsing Strings to Numbers</h3>
-Hmmmm, what happens if instead of adding we tried to subtract, so say <code>"7" - 3</code>. Try it, you should get <code>4</code>.<br>
-Well, this is interesting, JavaScript knew that the string "7" was actually a number in disguise.<br>
-Now although this is a useful answer, and JavaScript is a very smart cookie, we want to avoid using number and strings together like this.<br>
-If you know that you have a string that contains a number, convert it to number data type using one of the following functions:<br>
-<table>
+	<h3>Análisis de cadenas a números</h3>
+	Hmmmm, ¿qué sucede si en lugar de sumar intentamos restar, así que digamos <code>"7" - 3</code>? Pruébalo, deberías obtener <code>4</code>.<br>
+	Bueno, esto es interesante, JavaScript sabía que la cadena "7" era en realidad un número disfrazado.<br>
+	Ahora, aunque esta es una respuesta útil, y JavaScript es una cookie muy inteligente, queremos evitar usar números y cadenas juntos como este.<br>
+	Si sabe que tiene una cadena que contiene un número, conviértala al tipo de datos de número usando una de las siguientes funciones:<br><table>
 <tr><td>
 	<code>Number.parseInt()</code>
 </td><td>
-	Converts a string representing an integer to a number, ignores any extra characters.<br>
+Convierte una cadena que representa un número entero en un número, ignora cualquier carácter adicional.<br>
 	Calling <code>Number.parseInt()</code> on <code>"23"</code> <code>"7.25 litres"</code> <code>"1.995"</code> and <code>"3 apples."</code>
 	<br>Gives <code class="console-out">&larr; 23</code>
 	<code class="console-out">&larr; 7</code>
@@ -370,7 +378,7 @@ If you know that you have a string that contains a number, convert it to number 
 </td></tr><tr><td>
 	<code>Number.parseInt()</code>
 </td><td>
-	Converts a string representing a floating point number to a number, ignores any extra characters.<br>
+Convierte una cadena que representa un número de punto flotante en un número, ignora cualquier carácter adicional.<br>
 	Calling <code>Number.parseFloat()</code> on <code>"23"</code> <code>"7.25 litres"</code> <code>"1.995"</code> <code>"3 apples."</code><br>
 	Gives <code class="console-out">&larr; 23</code>
 	<code class="console-out">&larr; 7.25</code>
@@ -380,14 +388,14 @@ If you know that you have a string that contains a number, convert it to number 
 
 <br><br>
 <h3>NaN</h3>
-So what happens when we try and do something silly with our numbers?<br>
-For example <code>'orange' - 4</code> <code>Number.parseInt('football');</code> <code>0 / 0</code> <code> (-1) ** 0.5</code><br>
-Well, we get a <code class="console-out">&larr; NaN</code>, which stands for <b>Not a Number</b>. <br><br>
-<b>NaN</b> is interesting, <code>typeof(NaN);</code> gives us <code class="console-out">&larr; "number"</code>... So Not a Number is in fact a number.<br>
-There's a built-in function for testing for NaN values, <code>Number.isNaN()</code>.<br>
+Entonces, ¿qué sucede cuando tratamos de hacer algo tonto con nuestros números?<br>
+Por ejemplo <code>'naranja' - 4</code> <code>Number.parseInt('football');</code> <code>0 / 0</code> <code> (-1) ** 0.5 </código><br>
+Bueno, tenemos un <code class="console-out">&larr; NaN</code>, que significa <b>No es un número</b>. <br><br>
+<b>NaN</b> es interesante, <code>typeof(NaN);</code> nos da <code class="console-out">&larr; "number"</code>... Así que Not a Number es de hecho un número.<br>
+Hay una función incorporada para probar los valores de NaN, <code>Number.isNaN()</code>.<br>
 
-<h3>Infinity</h3>
-Some properties of <code>Infinity</code>:
+<h3>Infinito</h3>
+Algunas propiedades de <code>Infinity</code>:
 	<table><tr><td>
 <code>1 / 0</code> 
 	</td><td>
@@ -408,114 +416,113 @@ Some properties of <code>Infinity</code>:
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number" target="_blank" class="learn-more">Learn More About the Number Object</a><br><br>
 
-<h3>Advanced Math Functions</h3>
-	<table><tr><td>
-<code>Math.round(<i>number</i>)</code> 
-	</td><td>
-	Returns <i>number</i> rounded to the nearest integer.
-	</td></tr><tr><td>
-<code>Math.abs(<i>number</i>)</code> 
-	</td><td>
-	Returns the absolute value of <i>number</i>.
-	</td></tr><tr><td>
-<code>Math.sin(<i>number</i>)</code> 
-	</td><td>
-	Returns the sine of <i>number</i>.
-	</td></tr><tr><td>
-<code>Math.cos(<i>number</i>)</code> 
-	</td><td>
-	Returns the cosine of <i>number</i>.
-	</td></tr><tr><td>
-<code>Math.sqrt(<i>number</i>)</code> 
-	</td><td>
-	Returns the square root of <i>number</i>.
-	</td></tr><tr><td>
-<code>Math.pow(<i>base</i>, <i>exponent</i>)</code> 
-	</td><td>
-	Returns <i>base</i> to the <i>exponent</i> power.
-	</td></tr><tr><td>
-<code>Math.log(<i>number</i>)</code> 
-	</td><td>
-	Returns the natural logarithm ln() of <i>number</i>.
-	</td></tr><tr><td>
-<code>Math.max(<i>x</i>, <i>y</i>, ...)</code> 
-	</td><td>
-	Returns the largest of the numbers passed in.<br><code>Math.min(<i>x</i>, <i>y</i>, ...)</code> returns the smallest.
-	</td></tr></table>
-
+<h3>Funciones matemáticas avanzadas</h3>
+<tabla><tr><td>
+<code>Math.round(<i>número</i>)</code>
+</td><td>
+Devuelve <i>número</i> redondeado al entero más próximo.
+</td></tr><tr><td>
+<code>Math.abs(<i>número</i>)</code>
+</td><td>
+Devuelve el valor absoluto de <i>número</i>.
+</td></tr><tr><td>
+<code>Math.sin(<i>número</i>)</code>
+</td><td>
+Devuelve el seno de <i>número</i>.
+</td></tr><tr><td>
+<code>Math.cos(<i>número</i>)</code>
+</td><td>
+Devuelve el coseno de <i>número</i>.
+</td></tr><tr><td>
+<code>Math.sqrt(<i>número</i>)</code>
+</td><td>
+Devuelve la raíz cuadrada de <i>número</i>.
+</td></tr><tr><td>
+<code>Math.pow(<i>base</i>, <i>exponente</i>)</code>
+</td><td>
+Devuelve <i>base</i> a la potencia <i>exponente</i>.
+</td></tr><tr><td>
+<code>Math.log(<i>número</i>)</code>
+</td><td>
+Devuelve el logaritmo natural ln() de <i>número</i>.
+</td></tr><tr><td>
+<code>Math.max(<i>x</i>, <i>y</i>, ...)</code>
+</td><td>
+	Devuelve el mayor de los números pasados.<br><code>Math.min(<i>x</i>, <i>y</i>, ...)</code> devuelve el menor.
+</td></tr></tabla>
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math" target="_blank" class="learn-more">Learn More About Math Functions</a><br><br>
 
-<h2>Booleans</h2>
-The following operators return <code>true</code> or <code>false</code>, these will be essential to make use of Control Flow which is the main concept of this level.
+<h2>Booleanos</h2>
+Los siguientes operadores devuelven <code>true</code> o <code>false</code>, estos serán esenciales para hacer uso de Control Flow que es el concepto principal de este nivel.
 <br><br>
 
-	<h3>Equality Operators</h3>
+<h3>Operadores de igualdad</h3>
 <table><tr><td>
 	<code><i>a</i> == <i>b</i></code>
 </td><td>
-	Returns true if <i>a</i> and <i>b</i> are equal in value, false otherwise.<br>
-	Note that <i>a</i> and <i>b</i> can have different types and still be equal.<br>
-	Examples:
+Devuelve verdadero si <i>a</i> y <i>b</i> tienen el mismo valor; de lo contrario, devuelve falso.<br>
+Tenga en cuenta que <i>a</i> y <i>b</i> pueden tener diferentes tipos y seguir siendo iguales.<br>
+Ejemplos:
 	<code>3.25 == 3.25</code> <code class="console-out">&larr; true</code> , 
 	<code>3 == "3"</code> <code class="console-out">&larr; true</code> , 
 	<code>12 == 0.2</code> <code class="console-out">&larr; false</code>
 </td></tr><tr><td>
 	<code><i>a</i> === <i>b</i></code>
 </td><td>
-	Returns true if <i>a</i> and <i>b</i> are equal in value <b>and have the same type</b>, false otherwise.<br>
-	Examples:
+Devuelve verdadero si <i>a</i> y <i>b</i> tienen el mismo valor <b>y tienen el mismo tipo</b>; de lo contrario, devuelve falso.<br>
+Ejemplos:
 	<code>3.25 === 3.25</code> <code class="console-out">&larr; true</code> , 
 	<code>3 === "3"</code> <code class="console-out">&larr; false</code> , 
 	<code>12 === 0.2</code> <code class="console-out">&larr; false</code>
 </td></tr><tr><td>
 	<code><i>a</i> != <i>b</i></code>
 </td><td>
-	Returns true if <i>a</i> and <i>b</i> are not equal in value, regardless of type, false otherwise.<br>
-	Examples:
+Devuelve verdadero si <i>a</i> y <i>b</i> no tienen el mismo valor, independientemente del tipo; de lo contrario, devuelve falso.<br>
+Ejemplos:
 	<code>3.25 != 3.25</code> <code class="console-out">&larr; false</code> , 
 	<code>3 != "3"</code> <code class="console-out">&larr; false</code> , 
 	<code>12 != 0.2</code> <code class="console-out">&larr; true</code>
 </td></tr><tr><td>
 	<code><i>a</i> !== <i>b</i></code>
 </td><td>
-	Returns true if <i>a</i> and <i>b</i> are either not equal in value or type, false otherwise.<br>
-	Examples:
+Devuelve verdadero si <i>a</i> y <i>b</i> no son iguales en valor o tipo; de lo contrario, devuelve falso.<br>
+Ejemplos:
 	<code>3.25 !== 3.25</code> <code class="console-out">&larr; false</code> , 
 	<code>3 !== "3"</code> <code class="console-out">&larr; true</code> , 
 	<code>12 !== 0.2</code> <code class="console-out">&larr; true</code>
 </td></tr></table>
 
-<h3>Comparison Operators</h3>
+<h3>Operadores de comparación</h3>
 	
 <table><tr><td>
 	<code><i>a</i> < <i>b</i></code>
 </td><td>
-	Returns true if <i>a</i> is less than <i>b</i>, false otherwise.<br>
-	Examples: 
+Devuelve verdadero si <i>a</i> es menor que <i>b</i>; de lo contrario, devuelve falso.<br>
+Ejemplos:
 	<code>1 < 2</code> <code class="console-out">&larr; true</code> , 
 	<code>2 < 2</code> <code class="console-out">&larr; false</code> , 
 	<code>3 < 2</code> <code class="console-out">&larr; false</code>
 </td></tr><tr><td>
 	<code><i>a</i> <= <i>b</i></code>
 </td><td>
-	Returns true if <i>a</i> is less than or equal to <i>b</i>, false otherwise.<br>
-	Examples: 
+Devuelve verdadero si <i>a</i> es menor o igual que <i>b</i>, falso en caso contrario.<br>
+Ejemplos:
 	<code>1 <= 2</code> <code class="console-out">&larr; true</code> , 
 	<code>2 <= 2</code> <code class="console-out">&larr; true</code> , 
 	<code>3 <= 2</code> <code class="console-out">&larr; false</code>
 </td></tr><tr><td>
 	<code><i>a</i> > <i>b</i></code>
 </td><td>
-	Returns true if <i>a</i> is greater than <i>b</i>, false otherwise.<br>
-	Examples: 
+Devuelve verdadero si <i>a</i> es mayor que <i>b</i>, falso en caso contrario.<br>
+Ejemplos:
 	<code>1 > 2</code> <code class="console-out">&larr; false</code> , 
 	<code>2 > 2</code> <code class="console-out">&larr; false</code> , 
 	<code>3 > 2</code> <code class="console-out">&larr; true</code>
 </td></tr><tr><td>
 	<code><i>a</i> >= <i>b</i></code>
 </td><td>
-	Returns true if <i>a</i> is greater than or equal to <i>b</i>, false otherwise.<br>
-	Examples: 
+Devuelve verdadero si <i>a</i> es mayor o igual que <i>b</i>; de lo contrario, devuelve falso.<br>
+Ejemplos: 
 	<code>1 >= 2</code> <code class="console-out">&larr; false</code> , 
 	<code>2 >= 2</code> <code class="console-out">&larr; true</code> , 
 	<code>3 >= 2</code> <code class="console-out">&larr; true</code>
@@ -526,16 +533,16 @@ The following operators return <code>true</code> or <code>false</code>, these wi
 <table><tr><td>
 	<code>!<i>a</i></code>
 </td><td>
-	The <b>NOT</b> operator, flips true to false and vice versa.<br>
-	Examples: 
+El operador <b>NO</b> cambia de verdadero a falso y viceversa.<br>
+Ejemplos:
 	<code>!true</code> <code class="console-out">&larr; false</code> , 
 	<code>!false</code> <code class="console-out">&larr; true</code>
 
 </td></tr><tr><td>
 	<code><i>a</i> && <i>b</i></code>
 </td><td>
-	The <b>AND</b> operator, returns true if both <i>a</i> and <i>b</i> are true, and false if either of them is false.<br>
-	Examples: 
+El operador <b>AND</b> devuelve verdadero si tanto <i>a</i> como <i>b</i> son verdaderos, y falso si alguno de ellos es falso.<br>
+Ejemplos:
 	<code>true && true</code> <code class="console-out">&larr; true</code> , 
 	<code>true && false</code> <code class="console-out">&larr; false</code> , 
 	<code>true && true</code> <code class="console-out">&larr; false</code>
@@ -577,12 +584,14 @@ Then try them with regular numbers and strings and see how the behaviour changes
 <br><br><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_Operators" target="_blank" class="learn-more">Learn More About Logical Operators and Falsy Values</a><br><br>
 
 
-<h2>Control Flow</h2>
+<h2>Flujo de control</h2>
 <h3>If-Else</h3>
-Control flow statements allow a program to execute different code based on a condition.<br>
-If a certain condition is true, one piece of code is executed; if it's false another piece of code is executed.<br>
+Las declaraciones de flujo de control permiten que un programa ejecute código diferente en función de una condición.<br>
+Si cierta condición es verdadera, se ejecuta una pieza de código; si es falso, se ejecuta otra pieza de código.<br>
 <br>
-The following code is an example of an <b>if-else</b> statement:
+El siguiente código es un ejemplo de un 
+<b>if-else</b>
+ declaración:
 <div class="code">var rollsOfToiletPaper = 5;
 if (rollsOfToiletPaper <= 1) {
 	console.log("I need to buy more toilet paper!");
@@ -591,20 +600,29 @@ if (rollsOfToiletPaper <= 1) {
 } else {
 	console.log("All good.");
 }</div>
-This program should be easy to understand:<br>
-If the value of <code>rollsOfToiletPaper</code> is less than or equal to 1, the code inside the first pair of curly braces is executed.<br> If it's greater than 50, the code between the second pair of curly braces is executed.<br>
-Otherwise the codein the last set of braces is executed.<br><br>
-<b>Note:</b> Code that's written between curly braces is called a <b>block</b> of code.
+Este programa debería ser fácil de entender:<br>
+Si el valor de <code>rollsOfToiletPaper</code> es menor o igual a 1, se ejecuta el código dentro del primer par de llaves.<br> Si es mayor que 50, el código entre el segundo par de llaves se ejecuta. se ejecuta.<br>
+De lo contrario, se ejecuta el código del último par de llaves.<br><br>
+<b>Nota:</b> El código que se escribe entre llaves se llama <b>bloque</b> de código.
 <br><br>
 
-To give a more formal definition, the <code>if</code> keyword is always followed by condition inside a pair of parentheses <code>(<i>condition</i>)</code>, after the condition we place a block of code <code>{ <i>do something here</i> }</code>.<br>
-Optionally, afterwards we can place an <code>else if</code> which behaves the same as an <code>if</code> or just an <code>else</code> which doesn't take a condition, just a block.
+Para dar una definición más formal, el
+<code>if</code>
+la palabra clave siempre va seguida de una condición dentro de un par de paréntesis
+ <code>(<i>condition</i>)</code>,
+ después de la condición colocamos un bloque de código
+  <code>{ <i>do something here</i> }</code>.<br>
+  Opcionalmente, después podemos colocar un <code>else if</code>
+que se comporta igual que un
+<code>if</code>
+o simplemente un
+ <code>else</code>
+ que no requiere una condición, solo un bloque.
 <br>
-Once the first condition is met the block following it is executed, the blocks for all the other <code>else</code> statements are ignored.
-
+Una vez que se cumple la primera condición, se ejecuta el bloque siguiente, los bloques para todas las demás declaraciones <code>else</code> se ignoran.
 	<br><br>
-<h3>Switch</h3>
-Sometimes we have to write programs like this:
+	<h3>Interruptor</h3>
+	A veces tenemos que escribir programas como este:
 <div class="code">var letter = 'C';
 if (letter === 'A') {
 	console.log('A for Aligator');
@@ -617,10 +635,13 @@ if (letter === 'A') {
 } else if (letter === 'E') {
 	console.log('E for Elephant');
 } else {
-	console.log('Unsupported letter, please try again');
+	console.log('Carta no admitida, inténtalo de nuevo');
 }</div>
 
-It gets tedious and difficult to read, a much more convenient and appealing way of writing the same program is with a <code>switch</code> statement:
+Se vuelve tedioso y difícil de leer, una forma mucho más conveniente y
+forma atractiva de escribir el mismo programa es con un
+ <code>switch</code>
+ declaración:
 <div class="code">var letter = 'C';
 switch (letter) {
 	case 'A':
@@ -642,10 +663,11 @@ switch (letter) {
 		console.log('Unsupported letter, please try again');
 }</div>
 
-<h3>Conditional Operator (or the Ternary Operator)</h3>
-<code><i>condition</i> ? <i>statement1</i> : <i>statement2</i>;</code><br><br>
-If <i>condition</i> evaluates to true then <i>statement1</i> is executed, otherwise <i>statement2</i> is executed.<br>
-Consider the following code:
+<h3>Operadora condicional (o la operadora ternaria)</h3>
+<code><i>condition</i> ? <i>declaración1</i> : <i>declaración2</i>;</code><br><br>
+Si <i>condición</i> se evalúa como verdadero, entonces se ejecuta <i>instrucción1</i>; de lo contrario, <i>instrucción2</i>
+se ejecuta.<br>
+Considere el siguiente código:
 <div class="code">var milkExpired = false;
 if (milkExpired) {
 	console.log("I'm not having breakfast today :(");
@@ -653,24 +675,23 @@ if (milkExpired) {
 	console.log("Cereal time!");
 }</div>
 
-Using the conditional operator, it can be shortened to:
+Usando el operador condicional, se puede acortar a:
 <div class="code">var milkExpired = false;
 milkExpired ? console.log("I'm not having breakfast today.") : console.log("Cereal time!");
 </div>
-Actually it can be shortened even further:
+En realidad, se puede acortar aún más:
 <div class="code">var milkExpired = false;
 console.log( milkExpired ? "I'm not having breakfast today." : "Cereal time!");
 </div>
 
-<h2>Time to Play The Level</h2>
-It's pretty obvious the robot will have to jump, try it out, go to the <b>Console Tab</b> and type in:<br>
-<code>robot.jump(10);</code> That's the furthest forward the robot can jump.
+<h2>Es hora de jugar el nivel</h2>
+Es bastante obvio que el robot tendrá que saltar, pruébalo, ve a la <b>pestaña Consola</b> y escribe:<br>
+<code>robot.jump(10);</code> Eso es lo más lejos que puede saltar el robot.
 <br><br>
-Try to alternate between jumping and moving forward? <code>robot.move(40);</code>
+¿Intentar alternar entre saltar y avanzar?<code>robot.move(40);</code>
 <br>
-By the way, when the text input is selected in the console, use the up and down keys to go back and forth in your executed commands history.
-<br><br>
-If you can, try to write your solution in the <b>Script Tab</b>.<br><br>
+Por cierto, cuando se selecciona la entrada de texto en la consola, use las teclas arriba y abajo para avanzar y retroceder en el historial de comandos ejecutados.<br><br>
+Si puede, intente escribir su solución en la <b>pestaña Script</b>.<br><br>
 
 Una cosa a tener en cuenta, si declara una variable dentro <code>function init()</code>,
 no estará disponible en<code>function loop()</code>, la explicación detrás de esto vendrá en niveles posteriores.<br>
@@ -707,10 +728,10 @@ function loop(robot) {
 
 //////////// LEVEL 4 /////////////////////////////////////////////////////////
 `
-<h1>Level 4</h1>
+<h1>Nivel 4</h1>
 
-<h3>I haven't written the instructions for this level yet :(</h3>
-<h3>If you would like to help out tweet me <a href="https://twitter.com/reaalkhalil/">@reaalkhalil</a></h3>
+<h3>Aún no he escrito las instrucciones para este nivel :(</h3>
+<h3>Si quieres ayudar busca en  <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Variables#variable_types"></a></h3>
 
 <!--
 	keyboard control
