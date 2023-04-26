@@ -1,9 +1,7 @@
-# JSRobot
-A platform game you play by coding in JavaScript!
+# JRobot
+Un juego de plataformas que se juega codificando en JavaScript.
 <br><br>
 <img src="images/robotbig.png" width="200px">
+<img src="images/Prueba.png" width="200px">
 
-
-## Getting Started
-Click the `Clone or download` button above to download a zip file or clone the
-repository, then open `index.html`. Have fun :D
+<img src="images/prueba2.png" width="200px">
